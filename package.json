@@ -1,8 +1,8 @@
 {
-  "name": "table-and-apron-menu",
+  "name": "table-apron-menu-app-2025",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://w3jdev.github.io/table-and-apron-menu",
+  "homepage": "https://w3jdev.github.io/table-apron-menu-app-2025",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -46,13 +46,8 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "autoprefixer": "^10.4.16",
-    "gh-pages": "^6.0.0",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1"
-  },
-  "resolutions": {
-    "nth-check": "^2.0.1",
-    "postcss": "^8.4.31",
-    "semver": "^7.5.2"
   }
 }
