@@ -1,0 +1,49 @@
+{
+  "short_name": "T&A Menu",
+  "name": "Table & Apron Digital Menu",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#991b1b",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "categories": ["food", "restaurant", "menu"],
+  "description": "Digital menu for Table & Apron restaurant with multilingual support and dietary information",
+  "screenshots": [
+    {
+      "src": "screenshots/menu.png",
+      "sizes": "1170x2532",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Menu View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "View Menu",
+      "short_name": "Menu",
+      "description": "View the full menu",
+      "url": "/menu",
+      "icons": [{ "src": "icons/menu.png", "sizes": "192x192" }]
+    }
+  ],
+  "prefer_related_applications": false
+}
