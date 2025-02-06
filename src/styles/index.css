@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .animate-fade-in {
+    animation: fadeIn 0.2s ease-in-out;
+  }
+
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #991b1b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7f1d1d;
+}
+
+/* Text selection */
+::selection {
+  @apply bg-red-100 text-red-900;
+}
+
+/* Prevent blue highlight on mobile tap */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Ensure buttons look good on iOS */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: none;
+}
+
+/* Custom font for restaurant name */
+@font-face {
+  font-family: 'Crimson Pro';
+  src: url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&display=swap');
+  font-display: swap;
+}
+
+.font-serif {
+  font-family: 'Crimson Pro', serif;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .h-screen {
+    height: -webkit-fill-available;
+  }
+
+  .max-h-64 {
+    max-height: 40vh;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  body {
+    @apply text-black bg-white;
+  }
+}
